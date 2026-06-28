@@ -3,13 +3,11 @@ import './jobs.css'
 
 function App() {
   /*この隙間にconstを定義 start*/
-  const job ="システムエンジニア";
 
   const stdy =new Date("2026-04-01");
   const tody =new Date();
   const ditime =tody -stdy;
   const jobyears =ditime /(1000*60*60*24*365.25);
-
   const webst =new Date("2024-04-01");
   const webmoden =new Date("2024-09-01");
   const webdi =tody -webst;
@@ -32,9 +30,7 @@ function App() {
   /*この隙間にconstを定義 end*/
   return (
     <>
-      <h1>{job}</h1>
-      <h2>勤続年数{Math.floor(jobyears)}年</h2>
-
+      <h2>スキル</h2>
       <ul>{skill_slot.map((item,index)=>(
         <li key={index}>
           {item.name} {Math.floor(item.year)}年
