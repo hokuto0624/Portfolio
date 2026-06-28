@@ -1,10 +1,12 @@
 import './footer.css'
 import Nav from '../nav/nav.jsx'
+import Mail from '../mail/mail.jsx'
 function Footer(){
     return(
     <>
     <Nav/>
-    <p>© shimizuhokuto 2026</p>
+    <Mail/>
+    <p>© 清水北斗 2026</p>
     </>
     )
 }
